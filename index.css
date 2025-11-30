@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p {
+  font-size: 12px;
+}
+
+
+
+/* From Uiverse.io by adamgiebl */
+.cssbuttons-io-button {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(0deg, rgba(20, 167, 62, 1) 0%, rgba(102, 247, 113, 1) 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+}
+
+.cssbuttons-io-button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+.cssbuttons-io-button:active {
+  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}
+
+.btn {
+
+  color: white;
+  cursor: pointer;
+  border: none;
+  background-color: #212529;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clrText {
+  color: #A0153E;
+}
+
+/* Global styles */
+body {
+  /* background: #1B0029; */
+
+  /* background: linear-gradient(90deg, hsla(240, 41%, 11%, 1) 0%, hsla(250, 46%, 21%, 1) 50%, hsla(240, 41%, 11%, 1) 90%); */
+
+  /* background: -moz-linear-gradient(90deg, rgb(29, 17, 40) 0%, hsla(250, 46%, 21%, 1) 50%, hsla(240, 41%, 11%, 1) 90%); */
+
+  /* background: -webkit-linear-gradient(90deg, hsla(240, 41%, 11%, 1) 0%, hsla(250, 46%, 21%, 1) 50%, hsla(240, 41%, 11%, 1) 90%); */
+
+  /* filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1B0029", endColorstr="#251D4E", GradientType=1 ); */
+
+}
+
+/* Style scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsla(240, 41%, 11%, 1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsla(251, 47%, 27%, 1);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsla(251, 47%, 35%, 1);
+}
+
+
+.signin {
+  float: right;
+  max-width: 320px;
+  display: flex;
+  padding: 0.5rem 1.4rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  gap: 0.75rem;
+  color: #c4d2dc;
+  background-color: #19242b;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0, 0.87, 0.12, 1);
+}
+
+.signin:hover {
+  transform: scale(1.025);
+}
+
+.signin:active {
+  transform: scale(0.975);
+}
+
+button svg {
+  height: 24px;
+  width: auto;
+}
+
+.live-indicator {
+  position: absolute;
+  top: 10px;
+  /* Adjust the position */
+  right: 10px;
+  /* Adjust the position */
+  width: 10px;
+  /* Size of the dot */
+  height: 10px;
+  /* Size of the dot */
+  border-radius: 50%;
+  background-color: green;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+}
